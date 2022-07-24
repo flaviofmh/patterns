@@ -2,17 +2,17 @@ package com.padroes.projeto.strategy.dtos;
 
 import com.padroes.projeto.strategy.enums.TipoConta;
 
-public class PessoaCadastro {
+public class ContaPessoaCadastro {
 
     private String nome;
     private String numeroFiscal;
     private TipoConta tipoConta;
 
-    public PessoaCadastro(String nome) {
+    public ContaPessoaCadastro(String nome) {
         super();
     }
 
-    public PessoaCadastro(String nome, String numeroFiscal, TipoConta tipoConta) {
+    public ContaPessoaCadastro(String nome, String numeroFiscal, TipoConta tipoConta) {
         this.nome = nome;
         this.numeroFiscal = numeroFiscal;
         this.tipoConta = tipoConta;

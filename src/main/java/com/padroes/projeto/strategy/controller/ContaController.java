@@ -1,6 +1,6 @@
 package com.padroes.projeto.strategy.controller;
 
-import com.padroes.projeto.strategy.dtos.PessoaCadastro;
+import com.padroes.projeto.strategy.dtos.ContaPessoaCadastro;
 import com.padroes.projeto.strategy.entities.Conta;
 import com.padroes.projeto.strategy.service.ContaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +17,8 @@ public class ContaController {
     private ContaService contaService;
 
     @PostMapping
-    public Conta registrar(@RequestBody PessoaCadastro pessoaCadastro) {
-        return contaService.registrarConta(pessoaCadastro);
+    public Conta registrar(@RequestBody ContaPessoaCadastro contaPessoaCadastro) {
+        return contaService.registrarConta(contaPessoaCadastro);
     }
 
 }
